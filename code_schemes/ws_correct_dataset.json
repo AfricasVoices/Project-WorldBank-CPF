@@ -1,0 +1,113 @@
+{
+    "SchemeID": "Scheme-ffffa079",
+    "Name": "WS - Correct Dataset",
+    "Version": "0.0.0.1",
+    "Codes": [
+        {
+            "CodeID": "code-7b00ca42",
+            "CodeType": "Normal",
+            "DisplayText": "worldbank_scd s02e01",
+            "StringValue": "worldbank_scd_s02e01",
+            "NumericValue": 10,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "worldbank_scd_s02e01"
+            ]
+        },
+        {
+            "CodeID": "code-c6ba2d4e",
+            "CodeType": "Normal",
+            "DisplayText": "worldbank_scd s02 invitation",
+            "StringValue": "worldbank_scd_s02_invitation",
+            "NumericValue": 11,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "worldbank_scd_s02_invitation"
+            ]
+        },
+        {
+            "CodeID": "code-70ac05ab",
+            "CodeType": "Normal",
+            "DisplayText": "age",
+            "StringValue": "age",
+            "NumericValue": 1,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "age"
+            ]
+        },
+        {
+            "CodeID": "code-6774cedd",
+            "CodeType": "Normal",
+            "DisplayText": "gender",
+            "StringValue": "gender",
+            "NumericValue": 2,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "gender"
+            ]
+        },
+        {
+            "CodeID": "code-dda6e4b4",
+            "CodeType": "Normal",
+            "DisplayText": "location",
+            "StringValue": "location",
+            "NumericValue": 3,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "location"
+            ]
+        },
+        {
+            "CodeID": "code-c2ef3b7f",
+            "CodeType": "Normal",
+            "DisplayText": "currently displaced",
+            "StringValue": "currently_displaced",
+            "NumericValue": 4,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "currently_displaced"
+            ]
+        },
+        {
+            "CodeID": "code-87ec1cb8",
+            "CodeType": "Normal",
+            "DisplayText": "household language",
+            "StringValue": "household_language",
+            "NumericValue": 5,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "household_language"
+            ]
+        },
+        {
+            "CodeID": "code-c4a296a9",
+            "CodeType": "Normal",
+            "DisplayText": "disability",
+            "StringValue": "disability",
+            "NumericValue": 6,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "disability"
+            ]
+        },
+        {
+            "CodeID": "code-NR-5e3eee23",
+            "CodeType": "Control",
+            "ControlCode": "NR",
+            "DisplayText": "NR (not reviewed)",
+            "NumericValue": -40,
+            "StringValue": "NR",
+            "VisibleInCoda": false
+        },
+        {
+            "CodeID": "code-CE-016c1e22",
+            "CodeType": "Control",
+            "ControlCode": "CE",
+            "DisplayText": "CE (coding error)",
+            "NumericValue": -110,
+            "StringValue": "CE",
+            "VisibleInCoda": false
+        }
+    ]
+}
