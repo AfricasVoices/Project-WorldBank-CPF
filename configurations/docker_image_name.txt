@@ -1,1 +1,1 @@
-ghcr.io/africasvoices/engagement-data-pipeline:71200f1eab7bce75cbaeca4dc6e7661b564207baU
+ghcr.io/africasvoices/engagement-data-pipeline:71200f1eab7bce75cbaeca4dc6e7661b564207ba
