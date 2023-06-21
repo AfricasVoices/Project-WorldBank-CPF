@@ -29,7 +29,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         RapidProSource(
             rapid_pro=RapidProClientConfiguration(
                 domain="textit.com",
-                token_file_url="gs://avf-credentials/worldbank-scd-text-it-token.txt"
+                token_file_url="gs://avf-credentials/worldbank-cpf-text-it-token.txt"
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
