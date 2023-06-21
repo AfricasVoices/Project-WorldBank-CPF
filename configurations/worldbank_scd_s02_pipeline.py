@@ -53,22 +53,22 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         sync_config=CodaSyncConfiguration(
             dataset_configurations=[
                 CodaDatasetConfiguration(
-                    coda_dataset_id="WorldBank_SCD_s02_invitation",
-                    engagement_db_dataset="worldbank_scd_s02_invitation",
+                    coda_dataset_id="WorldBank_CPF_s01_invitation",
+                    engagement_db_dataset="worldbank_cpf_s01_invitation",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s02_invitation"),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01_invitation"),
                                                 coda_code_schemes_count=3)
                     ],
-                    ws_code_match_value="worldbank_scd_s02_invitation"
+                    ws_code_match_value="worldbank_cpf_s01_invitation"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="WorldBank_SCD_s02e01",
-                    engagement_db_dataset="worldbank_scd_s02e01",
+                    coda_dataset_id="WorldBank_CPF_s01e01",
+                    engagement_db_dataset="worldbank_cpf_s01e01",
                     code_scheme_configurations=[
-                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s02e01"),
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01e01"),
                                                 coda_code_schemes_count=3)
                     ],
-                    ws_code_match_value="worldbank_scd_s02e01"
+                    ws_code_match_value="worldbank_cpf_s01e01"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="IMAQAL_age",
@@ -139,7 +139,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                 ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
-            project_users_file_url="gs://avf-project-datasets/2022/WorldBank-SCD/coda_users.json"
+            project_users_file_url="gs://avf-project-datasets/2023/WorldBank-CPF/coda_users.json"
         )
     ),
     archive_configuration=ArchiveConfiguration(
@@ -149,7 +149,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     analysis=AnalysisConfiguration(
         google_drive_upload=GoogleDriveUploadConfiguration(
             credentials_file_url="gs://avf-credentials/pipeline-runner-service-acct-avf-data-core-64cc71459fe7.json",
-            drive_dir="worldbank_scd_analysis_outputs/s02"
+            drive_dir="worldbank_cpf_analysis_outputs/s01"
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
