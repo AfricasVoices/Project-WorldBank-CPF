@@ -71,7 +71,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     ws_code_match_value="worldbank_cpf_s01e01"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_age",
+                    coda_dataset_id="WorldBank_SCD_age",
                     engagement_db_dataset="age",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/age"),
@@ -79,30 +79,27 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                     somali.DemographicCleaner.clean_age_within_range(text))
                                                 ),
                     ],
-                    ws_code_match_value="age",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="age"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_gender",
+                    coda_dataset_id="WorldBank_SCD_gender",
                     engagement_db_dataset="gender",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/gender"),
                                                 auto_coder=somali.DemographicCleaner.clean_gender)
                     ],
-                    ws_code_match_value="gender",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="gender"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_household_language",
+                    coda_dataset_id="WorldBank_SCD_household_language",
                     engagement_db_dataset="household_language",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/household_language"), auto_coder=None)
                     ],
-                    ws_code_match_value="household_language",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="household_language"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_location",
+                    coda_dataset_id="WorldBank_SCD_location",
                     engagement_db_dataset="location",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/mogadishu_sub_district"),
@@ -114,28 +111,25 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/somalia_state"), auto_coder=None),
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/somalia_zone"), auto_coder=None),
                     ],
-                    ws_code_match_value="location",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="location"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_currently_displaced",
+                    coda_dataset_id="WorldBank_SCD_currently_displaced",
                     engagement_db_dataset="currently_displaced",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/currently_displaced"),
                                                 auto_coder=somali.DemographicCleaner.clean_yes_no)
                     ],
-                    ws_code_match_value="currently_displaced",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="currently_displaced"
                 ),
                 CodaDatasetConfiguration(
-                    coda_dataset_id="IMAQAL_disability",
+                    coda_dataset_id="WorldBank_SCD_disability",
                     engagement_db_dataset="disability",
                     code_scheme_configurations=[
                         CodeSchemeConfiguration(code_scheme=load_code_scheme("demographics/disability"),
                                                 auto_coder=somali.DemographicCleaner.clean_yes_no)
                     ],
-                    ws_code_match_value="disability",
-                    dataset_users_file_url="gs://avf-project-datasets/2022/IMAQAL-POOL/coda_users.json"
+                    ws_code_match_value="disability"
                 ),
             ],
             ws_correct_dataset_code_scheme=load_code_scheme("ws_correct_dataset"),
