@@ -4,7 +4,7 @@ from src.pipeline_configuration_spec import *
 
 
 PIPELINE_CONFIGURATION = PipelineConfiguration(
-    pipeline_name="WorldBank-SCD-S02",
+    pipeline_name="WorldBank-CPF-S01",
     test_participant_uuids=[
         "avf-participant-uuid-368c7741-7034-474a-9a87-6ae32a51f5a0",
         "avf-participant-uuid-5ca68e07-3dba-484b-a29c-7a6c989036b7",
