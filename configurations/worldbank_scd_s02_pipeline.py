@@ -43,7 +43,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("wb_cpf_s01_sdc_pdrc_invitation", "worldbank_invitation_2023", "worldbank_cpf_s01_invitation"),
                     FlowResultConfiguration("wb_cpf_s01_wb_s01_invitation", "worldbank_invitation_2023", "worldbank_cpf_s01_invitation"),
 
-                    FlowResultConfiguration("worldbank_scd_s02e01_activation", "rqa_worldbank_scd_s02e01", "worldbank_scd_s02e01"),
+                    FlowResultConfiguration("worldbank_cpf_s01e01_activation", "rqa_worldbank_scd_s02e01", "worldbank_cpf_s01e01"),
                 ]
             )
         )
