@@ -144,7 +144,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
     ),
     archive_configuration=ArchiveConfiguration(
         archive_upload_bucket="gs://pipeline-execution-backup-archive",
-        bucket_dir_path="2023/WorldBank-SCD-S02"
+        bucket_dir_path="2023/WorldBank-CPF-S01"
     ),
     analysis=AnalysisConfiguration(
         google_drive_upload=GoogleDriveUploadConfiguration(
