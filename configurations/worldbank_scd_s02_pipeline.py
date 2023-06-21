@@ -33,12 +33,12 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
             ),
             sync_config=RapidProToEngagementDBConfiguration(
                 flow_result_configurations=[
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_district", "location"),
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_gender", "gender"),
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_age", "age"),
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_currently_displaced", "currently_displaced"),
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_disability", "disability"),
-                    FlowResultConfiguration("worldbank_scd_s02_demog", "worldbank_household_language", "household_language"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_district", "location"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_gender", "gender"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_age", "age"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_currently_displaced", "currently_displaced"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_disability", "disability"),
+                    FlowResultConfiguration("worldbank_cpf_s01_demog", "worldbank_household_language", "household_language"),
 
                     FlowResultConfiguration("wb_scd_s02_sdc_pdrc_invitation", "worldbank_invitation_2023", "worldbank_scd_s02_invitation"),
                     FlowResultConfiguration("wb_scd_s02_worldbank_s01_invitation", "worldbank_invitation_2023", "worldbank_scd_s02_invitation"),
