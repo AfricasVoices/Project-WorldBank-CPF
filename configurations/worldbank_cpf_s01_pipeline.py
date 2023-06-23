@@ -43,6 +43,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("wb_cpf_s01_sdc_pdrc_invitation", "worldbank_invitation_2023", "worldbank_cpf_s01_invitation"),
                     FlowResultConfiguration("wb_cpf_s01_wb_s01_invitation", "worldbank_invitation_2023", "worldbank_cpf_s01_invitation"),
 
+                    # This project was originally called WorldBank-SCD s02, which is why this flow maps from
+                    # scd_s02e01 to cpf_s01e01
                     FlowResultConfiguration("worldbank_cpf_s01e01_activation", "rqa_worldbank_scd_s02e01", "worldbank_cpf_s01e01"),
                 ]
             )
