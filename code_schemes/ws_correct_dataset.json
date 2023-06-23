@@ -6,23 +6,23 @@
         {
             "CodeID": "code-7b00ca42",
             "CodeType": "Normal",
-            "DisplayText": "worldbank_scd s02e01",
-            "StringValue": "worldbank_scd_s02e01",
+            "DisplayText": "worldbank_cpf s01e01",
+            "StringValue": "worldbank_cpf_s01e01",
             "NumericValue": 10,
             "VisibleInCoda": true,
             "MatchValues": [
-                "worldbank_scd_s02e01"
+                "worldbank_cpf_s01e01"
             ]
         },
         {
             "CodeID": "code-c6ba2d4e",
             "CodeType": "Normal",
-            "DisplayText": "worldbank_scd s02 invitation",
-            "StringValue": "worldbank_scd_s02_invitation",
+            "DisplayText": "worldbank_cpf s01 invitation",
+            "StringValue": "worldbank_cpf_s01_invitation",
             "NumericValue": 11,
             "VisibleInCoda": true,
             "MatchValues": [
-                "worldbank_scd_s02_invitation"
+                "worldbank_cpf_s01_invitation"
             ]
         },
         {
