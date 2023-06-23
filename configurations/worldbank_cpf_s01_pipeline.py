@@ -46,6 +46,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     # This project was originally called WorldBank-SCD s02, which is why this flow maps from
                     # scd_s02e01 to cpf_s01e01
                     FlowResultConfiguration("worldbank_cpf_s01e01_activation", "rqa_worldbank_scd_s02e01", "worldbank_cpf_s01e01"),
+                    FlowResultConfiguration("worldbank_cpf_s01e02_activation", "rqa_worldbank_cpf_s01e02", "worldbank_cpf_s01e02"),
                 ]
             )
         )
@@ -71,6 +72,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="worldbank_cpf_s01e01"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01e02",
+                    engagement_db_dataset="worldbank_cpf_s01e02",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01e02"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01e02"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="WorldBank_CPF_age",
@@ -167,6 +177,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/s01e01"),
                         analysis_dataset="s01e01"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01e02"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e02_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01e02"),
+                        analysis_dataset="s01e02"
                     )
                 ]
             ),
