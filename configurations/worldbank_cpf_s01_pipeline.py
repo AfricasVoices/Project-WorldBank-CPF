@@ -149,17 +149,6 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
         ),
         dataset_configurations=[
             AnalysisDatasetConfiguration(
-                engagement_db_datasets=["worldbank_cpf_s01_invitation"],
-                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
-                raw_dataset="s01_invitation_raw",
-                coding_configs=[
-                    CodingConfiguration(
-                        code_scheme=load_code_scheme("rqas/s01_invitation"),
-                        analysis_dataset="s01_invitation"
-                    )
-                ]
-            ),
-            AnalysisDatasetConfiguration(
                 engagement_db_datasets=["worldbank_cpf_s01e01"],
                 dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
                 raw_dataset="s01e01_raw",
