@@ -3,7 +3,70 @@
     "Name": "WorldBank-CPF S01E01",
     "Version": "0.0.0.1",
     "Codes": [
-
+        {
+            "CodeID": "code-701de543",
+            "CodeType": "Normal",
+            "DisplayText": "financial assistance",
+            "NumericValue": 1,
+            "StringValue": "financial_assistance",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-c9e0233e",
+            "CodeType": "Normal",
+            "DisplayText": "agriculture",
+            "NumericValue": 2,
+            "StringValue": "agriculture",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-474364a6",
+            "CodeType": "Normal",
+            "DisplayText": "debt relief",
+            "NumericValue": 3,
+            "StringValue": "debt_relief",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-355bcc58",
+            "CodeType": "Normal",
+            "DisplayText": "job creation for youth",
+            "NumericValue": 4,
+            "StringValue": "job_creation_for_youth",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-79819ab1",
+            "CodeType": "Normal",
+            "DisplayText": "military support",
+            "NumericValue": 5,
+            "StringValue": "military_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-65c9557a",
+            "CodeType": "Normal",
+            "DisplayText": "health and education",
+            "NumericValue": 6,
+            "StringValue": "health_and_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-fa5faac3",
+            "CodeType": "Normal",
+            "DisplayText": "support during drought and floods",
+            "NumericValue": 7,
+            "StringValue": "support_during_drought_and_floods",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ff86159d",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
         {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
