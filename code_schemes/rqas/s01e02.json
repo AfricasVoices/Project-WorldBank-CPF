@@ -3,7 +3,70 @@
     "Name": "WorldBank-CPF S01E02",
     "Version": "0.0.0.1",
     "Codes": [
-
+        {
+            "CodeID": "code-845f675e",
+            "DisplayText": "curb corruption",
+            "CodeType": "Normal",
+            "NumericValue": 1,
+            "StringValue": "curb_corruption",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3f07e7f5",
+            "DisplayText": "financial support",
+            "CodeType": "Normal",
+            "NumericValue": 2,
+            "StringValue": "financial_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d61b7560",
+            "DisplayText": "provide skilled personnel",
+            "CodeType": "Normal",
+            "NumericValue": 3,
+            "StringValue": "provide_skilled_personnel",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5e083e33",
+            "DisplayText": "job creation for youths",
+            "CodeType": "Normal",
+            "NumericValue": 4,
+            "StringValue": "job_creation_for_youths",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-3278ed5e",
+            "DisplayText": "support health and education",
+            "CodeType": "Normal",
+            "NumericValue": 5,
+            "StringValue": "support_health_and_education",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-75dcfe2b",
+            "DisplayText": "construct roads",
+            "CodeType": "Normal",
+            "NumericValue": 6,
+            "StringValue": "construct_roads",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d67cbf20",
+            "DisplayText": "security support",
+            "CodeType": "Normal",
+            "NumericValue": 7,
+            "StringValue": "security_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-ce136c6c",
+            "DisplayText": "other theme",
+            "CodeType": "Normal",
+            "NumericValue": 8,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
         {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
