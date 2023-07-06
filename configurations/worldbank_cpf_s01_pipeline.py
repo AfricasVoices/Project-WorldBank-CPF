@@ -48,6 +48,7 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("worldbank_cpf_s01e01_activation", "rqa_worldbank_scd_s02e01", "worldbank_cpf_s01e01"),
                     FlowResultConfiguration("worldbank_cpf_s01e02_activation", "rqa_worldbank_cpf_s01e02", "worldbank_cpf_s01e02"),
                     FlowResultConfiguration("worldbank_cpf_s01e03_activation", "rqa_worldbank_cpf_s01e03", "worldbank_cpf_s01e03"),
+                    FlowResultConfiguration("worldbank_cpf_s01e04_activation", "rqa_worldbank_cpf_s01e04", "worldbank_cpf_s01e04"),
                 ]
             )
         )
@@ -91,6 +92,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="worldbank_cpf_s01e03"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01e04",
+                    engagement_db_dataset="worldbank_cpf_s01e04",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01e04"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01e04"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="WorldBank_CPF_age",
@@ -198,6 +208,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/s01e03"),
                         analysis_dataset="s01e03"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01e04"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01e04_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01e04"),
+                        analysis_dataset="s01e04"
                     )
                 ]
             ),
