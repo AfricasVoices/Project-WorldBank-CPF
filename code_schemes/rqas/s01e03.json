@@ -3,7 +3,62 @@
     "Name": "WorldBank-CPF S01E03",
     "Version": "0.0.0.1",
     "Codes": [
-
+        {
+            "CodeID": "code-38d92b95",
+            "CodeType": "Normal",
+            "DisplayText": "curb corruption",
+            "NumericValue": 1,
+            "StringValue": "curb_corruption",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9ac5a067",
+            "CodeType": "Normal",
+            "DisplayText": "enhance security",
+            "NumericValue": 2,
+            "StringValue": "enhance_security",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-642384c1",
+            "CodeType": "Normal",
+            "DisplayText": "financial support",
+            "NumericValue": 3,
+            "StringValue": "financial_support",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-81c57e5a",
+            "CodeType": "Normal",
+            "DisplayText": "provide skills training",
+            "NumericValue": 4,
+            "StringValue": "provide_skills_training",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-88fdfec0",
+            "CodeType": "Normal",
+            "DisplayText": "provide workspaces",
+            "NumericValue": 5,
+            "StringValue": "provide_workspaces",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d1d389e4",
+            "CodeType": "Normal",
+            "DisplayText": "create jobs",
+            "NumericValue": 6,
+            "StringValue": "create_jobs",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-d478b735",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 7,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
         {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
