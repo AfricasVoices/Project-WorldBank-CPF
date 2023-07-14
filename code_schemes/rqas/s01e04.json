@@ -3,7 +3,78 @@
     "Name": "WorldBank-CPF S01E04",
     "Version": "0.0.0.1",
     "Codes": [
-
+        {
+            "CodeID": "code-99460a01",
+            "CodeType": "Normal",
+            "DisplayText": "construct dams",
+            "NumericValue": 1,
+            "StringValue": "construct_dams",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-96741c8d",
+            "CodeType": "Normal",
+            "DisplayText": "plant trees",
+            "NumericValue": 2,
+            "StringValue": "plant_trees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-6e7bf496",
+            "CodeType": "Normal",
+            "DisplayText": "stop cutting trees",
+            "NumericValue": 3,
+            "StringValue": "stop_cutting_trees",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-db9cfa98",
+            "CodeType": "Normal",
+            "DisplayText": "engage experts",
+            "NumericValue": 4,
+            "StringValue": "engage_experts",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9620f5f7",
+            "CodeType": "Normal",
+            "DisplayText": "climate change awareness",
+            "NumericValue": 5,
+            "StringValue": "climate_change_awareness",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-1259e3c8",
+            "CodeType": "Normal",
+            "DisplayText": "disaster prevention",
+            "NumericValue": 6,
+            "StringValue": "disaster_prevention",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-5e0063b8",
+            "CodeType": "Normal",
+            "DisplayText": "provide emergency funds",
+            "NumericValue": 7,
+            "StringValue": "provide_emergency_funds",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-f20387db",
+            "CodeType": "Normal",
+            "DisplayText": "pray to god",
+            "NumericValue": 8,
+            "StringValue": "pray_to_god",
+            "VisibleInCoda": true
+        },
+        {
+            "CodeID": "code-9010b031",
+            "CodeType": "Normal",
+            "DisplayText": "other theme",
+            "NumericValue": 9,
+            "StringValue": "other_theme",
+            "VisibleInCoda": true
+        },
         {
             "CodeID": "code-NA-f93d3eb7",
             "CodeType": "Control",
