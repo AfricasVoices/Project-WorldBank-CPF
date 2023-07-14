@@ -49,6 +49,12 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("worldbank_cpf_s01e02_activation", "rqa_worldbank_cpf_s01e02", "worldbank_cpf_s01e02"),
                     FlowResultConfiguration("worldbank_cpf_s01e03_activation", "rqa_worldbank_cpf_s01e03", "worldbank_cpf_s01e03"),
                     FlowResultConfiguration("worldbank_cpf_s01e04_activation", "rqa_worldbank_cpf_s01e04", "worldbank_cpf_s01e04"),
+                    FlowResultConfiguration("worldbank_cpf_s01e04_activation", "rqa_worldbank_cpf_s01e04", "worldbank_cpf_s01e04"),
+
+                    # The s01e01 question was re-asked at the end of the project to compensate for low-numbers in the
+                    # first week, caused in part by short code issues.
+                    # Include the re-asked question in the main s01e01 dataset.
+                    FlowResultConfiguration("worldbank_cpf_s01e01_repeat_activation", "rqa_worldbank_cpf_s01e01_repeat", "worldbank_cpf_s01e01"),
                 ]
             )
         )
