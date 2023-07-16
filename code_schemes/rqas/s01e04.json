@@ -54,9 +54,9 @@
         {
             "CodeID": "code-5e0063b8",
             "CodeType": "Normal",
-            "DisplayText": "provide emergency funds",
+            "DisplayText": "provide emerging support",
             "NumericValue": 7,
-            "StringValue": "provide_emergency_funds",
+            "StringValue": "provide_emerging_support",
             "VisibleInCoda": true
         },
         {
