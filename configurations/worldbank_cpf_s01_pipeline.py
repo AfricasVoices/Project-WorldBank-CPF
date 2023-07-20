@@ -55,6 +55,10 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     # first week, caused in part by short code issues.
                     # Include the re-asked question in the main s01e01 dataset.
                     FlowResultConfiguration("worldbank_cpf_s01e01_repeat_activation", "rqa_worldbank_cpf_s01e01_repeat", "worldbank_cpf_s01e01"),
+
+                    # The s01e04 show was repeated at the end of the project due difficulties finding a guest
+                    # the first time the show was broadcast.
+                    FlowResultConfiguration("worldbank_cpf_s01e04_repeat_activation", "rqa_worldbank_cpf_s01e04_repeat", "worldbank_cpf_s01e04"),
                 ]
             )
         )
