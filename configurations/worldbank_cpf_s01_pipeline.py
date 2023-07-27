@@ -61,6 +61,9 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     FlowResultConfiguration("worldbank_cpf_s01e04_repeat_activation", "rqa_worldbank_cpf_s01e04_repeat", "worldbank_cpf_s01e04"),
 
                     FlowResultConfiguration("worldbank_cpf_s01_close_out_activation", "rqa_worldbank_cpf_s01_close_out", "worldbank_cpf_s01_closeout"),
+                    FlowResultConfiguration("worldbank_cpf_s01_evaluation", "worldbank_cpf_s01_have_voice", "worldbank_cpf_s01_have_voice"),
+                    FlowResultConfiguration("worldbank_cpf_s01_evaluation", "worldbank_cpf_s01_suggestions", "worldbank_cpf_s01_suggestions"),
+                    FlowResultConfiguration("worldbank_cpf_s01_evaluation_activation", "rqa_worldbank_cpf_s01_evaluation_other", "worldbank_cpf_s01_evaluation_other")
                 ]
             )
         )
@@ -122,6 +125,33 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="worldbank_cpf_s01_closeout"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01_have_voice",
+                    engagement_db_dataset="worldbank_cpf_s01_have_voice",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01_have_voice"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01_have_voice"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01_suggestions",
+                    engagement_db_dataset="worldbank_cpf_s01_suggestions",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01_suggestions"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01_suggestions"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01_evaluation_other",
+                    engagement_db_dataset="worldbank_cpf_s01_evaluation_other",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01_evaluation_other"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01_evaluation_other"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="WorldBank_CPF_age",
@@ -251,6 +281,39 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/s01_closeout"),
                         analysis_dataset="s01_closeout"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01_have_voice"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01_have_voice_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01_have_voice"),
+                        analysis_dataset="s01_have_voice"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01_suggestions"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01_suggestions_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01_suggestions"),
+                        analysis_dataset="s01_suggestions"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01_evaluation_other"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01_evaluation_other_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01_evaluation_other"),
+                        analysis_dataset="s01_evaluation_other"
                     )
                 ]
             ),
