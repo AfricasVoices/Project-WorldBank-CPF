@@ -48,6 +48,17 @@
             ]
         },
         {
+            "CodeID": "code-b90b1892",
+            "CodeType": "Normal",
+            "DisplayText": "worldbank_cpf s01 closeout",
+            "StringValue": "worldbank_cpf_s01_closeout",
+            "NumericValue": 15,
+            "VisibleInCoda": true,
+            "MatchValues": [
+                "worldbank_cpf_s01_closeout"
+            ]
+        },
+        {
             "CodeID": "code-c6ba2d4e",
             "CodeType": "Normal",
             "DisplayText": "worldbank_cpf s01 invitation",

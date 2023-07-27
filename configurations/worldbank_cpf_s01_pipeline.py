@@ -59,6 +59,8 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     # The s01e04 show was repeated at the end of the project due difficulties finding a guest
                     # the first time the show was broadcast.
                     FlowResultConfiguration("worldbank_cpf_s01e04_repeat_activation", "rqa_worldbank_cpf_s01e04_repeat", "worldbank_cpf_s01e04"),
+
+                    FlowResultConfiguration("worldbank_cpf_s01_close_out_activation", "rqa_worldbank_cpf_s01_close_out", "worldbank_cpf_s01_closeout"),
                 ]
             )
         )
@@ -111,6 +113,15 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                                                 coda_code_schemes_count=3)
                     ],
                     ws_code_match_value="worldbank_cpf_s01e04"
+                ),
+                CodaDatasetConfiguration(
+                    coda_dataset_id="WorldBank_CPF_s01_closeout",
+                    engagement_db_dataset="worldbank_cpf_s01_closeout",
+                    code_scheme_configurations=[
+                        CodeSchemeConfiguration(code_scheme=load_code_scheme("rqas/s01_closeout"),
+                                                coda_code_schemes_count=3)
+                    ],
+                    ws_code_match_value="worldbank_cpf_s01_closeout"
                 ),
                 CodaDatasetConfiguration(
                     coda_dataset_id="WorldBank_CPF_age",
@@ -229,6 +240,17 @@ PIPELINE_CONFIGURATION = PipelineConfiguration(
                     CodingConfiguration(
                         code_scheme=load_code_scheme("rqas/s01e04"),
                         analysis_dataset="s01e04"
+                    )
+                ]
+            ),
+            AnalysisDatasetConfiguration(
+                engagement_db_datasets=["worldbank_cpf_s01_closeout"],
+                dataset_type=DatasetTypes.RESEARCH_QUESTION_ANSWER,
+                raw_dataset="s01_closeout_raw",
+                coding_configs=[
+                    CodingConfiguration(
+                        code_scheme=load_code_scheme("rqas/s01_closeout"),
+                        analysis_dataset="s01_closeout"
                     )
                 ]
             ),
